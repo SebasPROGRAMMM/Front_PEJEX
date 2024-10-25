@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lista_deseo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".ListaDeseosActivity">
+
+        <ImageButton
+
+            android:contentDescription="Perfil"
+            android:id="@+id/imageButton4"
+            android:layout_width="48dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/as" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="104dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="#88C551"
+            android:text="Soporte"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="116dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="sans-serif-black"
+            android:text="PEJEX"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:background="@color/white"
+            android:contentDescription="volver"
+            android:id="@+id/imageButton3"
+            android:layout_width="58dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/volver" />
+
+
+        <TextView
+            android:id="@+id/tv_lista_deseos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Lista de Deseos"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/iv_estrella"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Icono de estrella"
+            android:src="@drawable/ic_star"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_lista_deseos" />
+
+
+
+            <EditText
+            android:id="@+id/et_buscar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/darker_gray"
+            android:hint="Buscar producto"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_lista_deseos" />
+
+         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_lista_deseos"
+            android:layout_width="368dp"
+            android:layout_height="421dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toTopOf="@id/btn_agregar_productos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_buscar" />
+
+         <Button
+            android:id="@+id/btn_agregar_productos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#88C551"
+            android:text="Agregar Productos"
+            android:textColor="@android:color/black"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_lista_deseos" />
+
+            <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7DAF42"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/nav_home"
+                android:layout_width="56dp"
+                android:layout_height="50dp"
+                android:contentDescription="Inicio"
+                android:src="@drawable/kubgguiyljm" />
+
+            <ImageView
+                android:id="@+id/nav_categories"
+                android:layout_width="56dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:contentDescription="Categorías"
+                android:src="@drawable/qwe" />
+
+            <ImageView
+                android:id="@+id/nav_cart"
+                android:layout_width="56dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:contentDescription="Carrito"
+                android:src="@drawable/car" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="49dp"
+            android:layout_height="51dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_estrella"
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            tools:layout_editor_absoluteY="120dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

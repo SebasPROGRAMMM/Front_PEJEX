@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="Pago_con_exito">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:background="@color/white"
+            android:contentDescription="Volver"
+            android:id="@+id/imageButton5"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/volver"
+
+            />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="PEJEX"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#7DAF42"
+            android:text="Soporte" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:contentDescription="Perfil"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:srcCompat="@drawable/as" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7DAF42"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/nav_home"
+            android:layout_width="56dp"
+            android:layout_height="50dp"
+            android:contentDescription="Inicio"
+            android:src="@drawable/kubgguiyljm" />
+
+        <ImageView
+            android:id="@+id/nav_categories"
+            android:layout_width="56dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:contentDescription="Categorías"
+            android:src="@drawable/qwe" />
+
+        <ImageView
+            android:id="@+id/nav_cart"
+            android:layout_width="56dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:contentDescription="Carrito"
+            android:src="@drawable/car" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="394dp"
+        android:layout_height="395dp"
+        android:layout_marginTop="184dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:srcCompat="@drawable/pago_exito" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#7DAF42"
+        android:text="Ver detalles del pedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

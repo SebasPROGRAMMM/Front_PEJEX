@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PEJEX</string>
+    <string name="button_text">Soporte</string>
+    <string name="perfil_button_text">Perfil</string>
+    <string name="volver">Volver</string>
+    <string name="pejex">PEJEX</string>
+    <string name="soporte">Soporte</string>
+    <string name="perfil">Perfil</string>
+    <string name="inicio">Inicio</string>
+    <string name="categorias">Categorías</string>
+    <string name="carrito">Carrito</string>
+    <string name="NombreLogo">PEJEX</string>
+    <string name="iniciarSesion">Iniciar Sesion</string>
+    <string name="iniciarSesioncon">O inicia sesion con:</string>
+    <string name="registrarse">Registrate</string>
+    <string name="Correo">Correo</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Notenescuenta">¿No tienes cuenta?</string>
+    <string name="google_logo_desc">¿No tienes cuenta?</string>
+
+</resources>

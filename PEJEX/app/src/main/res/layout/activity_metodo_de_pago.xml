@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:background="@color/white"
+            android:id="@+id/btn_volver"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Volver"
+            android:src="@drawable/volver" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="211dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="PEJEX"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_perfil"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#7DAF42"
+            android:text="Soporte" />
+
+        <ImageButton
+            android:id="@+id/btn_soporte"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:contentDescription="Perfil"
+            android:src="@drawable/as" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titulo_pagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pagar"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/resumen_compra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Resumen de compra:"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/monto_pagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Pagar: $820:500"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_ver_productos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ver productos"
+        android:backgroundTint="#7DAF42"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/metodo_pago_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Método de pago:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/metodos_pago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:src="@drawable/mastercard"
+            android:contentDescription="MasterCard" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:src="@drawable/nequi"
+            android:contentDescription="Nequi" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:src="@drawable/paypal"
+            android:contentDescription="PayPal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formulario_datos_pago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:padding="12dp"
+            android:background="@drawable/edittext_border" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:padding="12dp"
+            android:background="@drawable/edittext_border" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de tarjeta"
+            android:padding="12dp"
+            android:background="@drawable/edittext_border" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de vencimiento"
+            android:padding="12dp"
+            android:background="@drawable/edittext_border" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código de seguridad"
+            android:padding="12dp"
+            android:background="@drawable/edittext_border" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_confirmar_compra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:backgroundTint="#7DAF42"
+        android:text="Confirmar Compra"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="auto"
+        android:background="#7DAF42"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/nav_home"
+            android:layout_width="56dp"
+            android:layout_height="50dp"
+            android:contentDescription="Inicio"
+            android:src="@drawable/kubgguiyljm" />
+
+        <ImageView
+            android:id="@+id/nav_categories"
+            android:layout_width="56dp"
+            android:layout_height="50dp"
+            android:contentDescription="Categorías"
+            android:src="@drawable/qwe" />
+
+        <ImageView
+            android:id="@+id/nav_cart"
+            android:layout_width="56dp"
+            android:layout_height="50dp"
+            android:contentDescription="Carrito"
+            android:src="@drawable/car" />
+    </LinearLayout>
+
+</LinearLayout>
